@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'MinhaFonte';
+    font-size: 500%;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url(Fonts/one\ piece\ font.ttf) format('truetype')
+}
+
+h2 {
+    text-align: center;
+    color: yellow;
+
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    border-radius: 10PX ;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.item {
+    cursor: pointer;
+    background-color: rgb(62, 62, 62);
+    border-radius: 5px;
+    padding: 0px 15px 15px 15px;
+    margin: 30px 0px 0px 0px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 65, 97);
+}
