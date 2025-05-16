@@ -10,9 +10,9 @@ document.getElementById("btnCalc").addEventListener("click", (e) => {
 
   const resultado = vlTotal - vlDesconto;
 
+  const arredonda = Number.isInteger(resultado) ? `${resultado}.00` : `${resultado.toFixed(2)}`
+
   const divResultado = document.getElementById("result");
 
-  divResultado.innerHTML = `<h3>O valor total é: R$${resultado}</h3>`;
-
-  // localStorage.setItem('meuResultado', resultado);
+  divResultado.innerHTML = `<h3>O valor total é: R$${arredonda}</h3>`;
 });
